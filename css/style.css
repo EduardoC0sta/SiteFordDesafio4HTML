@@ -1,0 +1,437 @@
+/* Configuração geral pagina */
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* index.html: Estilos gerais do header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: white;
+}
+
+/* index.html Header: Logo Ford a esquerda */
+.logoFord img {
+    width: 140px;
+    height: auto;
+}
+
+/* index.html Header: Edição do menu com links que redirecionam a outras páginas do site */
+.menuLinksGerais {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menuLinksGerais ul {
+    padding: 0%;
+    width: 60%;
+    text-align: center;
+}
+
+.menuLinksGerais a {
+    text-decoration: none;
+    color: #1351d8;
+    font-family: 'Ford', sans-serif;
+    font-size: 18px;
+    margin: 4%;
+    transition: transform 0.3s ease;
+}
+
+.menuLinksGerais a:hover {
+    color: #007bff;
+    transform: translateY(5px);
+}
+
+/* index.html Header: Edição para gerar responsávidade */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuLinksGerais {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 450px;
+        /* Aumenta o tamanho da caixa */
+    }
+
+    .menuLinksGerais a {
+        font-size: 10px;
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menuLinksGerais ul {
+        width: 80%;
+        text-align: center;
+    }
+
+    .logoFord img {
+        width: 90px;
+    }
+}
+
+
+/* index.html Main: Estilos gerais do main */
+main {
+    background-color: white;
+    border-bottom: 1px solid white;
+    padding: 15px;
+}
+
+/* index.html Main: Imagem novo CarroFord */
+.carroRanger2022 {
+    text-align: center;
+}
+
+.carroRanger2022 img {
+    max-width: 100%;
+    width: 100%;
+    max-width: 940px;
+    height: auto;
+}
+
+/* index.html Main: Texto abaixo da imagem */
+.carroRanger2022 p {
+    color: black;
+    font-family: 'Ford', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* index.html Main: Edição para gerar responsávidade */
+@media (max-width: 800px) {
+    main {
+        padding: 10px;
+    }
+
+    .carroRanger2022 p {
+        font-size: 14px;
+        /* Aumenta um pouco para melhor leitura em celular */
+    }
+}
+
+
+/* index.html Estilos gerais do footer */
+footer {
+    background-color: #1B3584;
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    min-height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap
+}
+
+/* index.html Footer: Redes sociais (esquerda) */
+.redesSociais {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 5px 0;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+/* index.html Footer: Texto especificando redes sociais */
+.redesSociais p {
+    color: white;
+    font-family: 'Ford', sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* index.html Footer: Ícones das redes sociais */
+.redesSociais img {
+    height: 24px;
+    width: auto;
+}
+
+/* index.html Footer: Logo chapada canto inferior direito Ford */
+.logoChapado img {
+    height: 40px;
+    width: auto;
+}
+
+.logoChapado {
+    display: flex;
+    color: white;
+}
+
+/* index.html Main: Edição para gerar responsávidade */
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .redesSociais,
+    .logoChapado {
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .redesSociais p {
+        font-size: 14px;
+        /* Leitura melhor no celular */
+    }
+}
+
+
+
+/* lancamento.html Main: Estilos video promocional */
+.videoPromocional {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: black;
+    width: 100%;
+    height: 315px;
+}
+
+.videoPromocional iframe {
+    width: 580px;
+    aspect-ratio: 16/9;
+    border: none;
+}
+
+/* lancamento.html Main: Estilos carros a venda */
+.carrosLancamento {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.carrosLancamento table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.carrosLancamento td {
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+    box-shadow: 0 0 10px white;
+    border-radius: 8px;
+}
+
+.carrosLancamento img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modelo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.modelo-container label {
+    flex: 1;
+    line-height: 1.2;
+    font-family: 'Ford', sans-serif;
+    color: #1351d8;
+
+
+}
+
+.simboloInfo {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.modelo-container input[type="checkbox"] {
+    margin: 0;
+    transform: scale(2.5);
+    margin-right: 1%;
+}
+
+/* lancamento.html Main: Botão no lançamento */
+.meioMain {
+    justify-items: center;
+}
+
+.botaoCompararCarros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ford', sans-serif;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1351d8;
+    padding: 10px 20px;
+    border-radius: 15px;
+    min-width: 300px;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .videoPromocional {
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .videoPromocional iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        max-width: 100%;
+    }
+
+    .carrosLancamento table {
+        display: block;
+    }
+
+    .carrosLancamento tr {
+        display: block;
+    }
+
+    .carrosLancamento td {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .modelo-container {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .modelo-container input[type="checkbox"] {
+        transform: scale(1.5);
+        margin: 0 10px 0 0;
+    }
+
+    .modelo-container .texto-modelo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        font-size: 13px;
+    }
+
+    .simboloInfo {
+        width: 28px;
+        height: 28px;
+        margin-left: 10px;
+    }
+}
+
+
+/* contato.html Main: Edição geral do main em contato */
+#mainContato {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* contato.html Main: Edição da visualização do formulario */
+.carroFormulario img {
+    max-width: 90%;
+    width: 400px;
+    height: auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Ford', sans-serif;
+    font-size: 16px;
+    color: black;
+    min-width: 280px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* contato.html Main: Edição nas caixas de interação com o cliente */
+.formulario input {
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Ford', sans-serif;
+    border: 1px solid #797979;
+    padding: 5px 10px;
+}
+
+#mensagem {
+    padding: 30px;
+    align-items: top;
+    font-family: 'Ford', sans-serif;
+}
+
+.formulario select {
+    height: 40px;
+    border-radius: 12px;
+    font-family: 'Ford', sans-serif;
+    padding: 5px 10px;
+}
+
+.botaoContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ford', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #1351d8;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+/* contato.html Main: Edição para gerar responsávidade */
+@media (max-width: 800px) {
+    #mainContato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carroFormulario {
+        display: flex;
+        justify-content: center;
+    }
+
+    .carroFormulario img {
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .botaoContato {
+        width: 100%;
+    }
+}
