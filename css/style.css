@@ -28,23 +28,26 @@ header {
 }
 
 .menuLinksGerais ul {
-    padding: 0%;
+    padding: 0;
     width: 60%;
     text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
 }
 
 .menuLinksGerais a {
+    display: inline-block;
     text-decoration: none;
     color: #1351d8;
     font-family: 'Ford', sans-serif;
     font-size: 18px;
-    margin: 4%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 8px 12px;
 }
 
 .menuLinksGerais a:hover {
     color: #007bff;
-    transform: translateY(5px);
+    transform: translateY(-10px)
 }
 
 /* index.html Header: Edição para gerar responsávidade */
@@ -179,7 +182,6 @@ footer {
         padding: 10px;
     }
 
-    .redesSociais,
     .logoChapado {
         justify-content: center;
         margin: 5px 0;
